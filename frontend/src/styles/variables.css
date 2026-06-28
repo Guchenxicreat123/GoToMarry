@@ -1,0 +1,98 @@
+/* ============================================
+   GoToMarry 主题变量 - 粉色婚庆风
+   ============================================ */
+
+:root {
+  /* ===== 主色调（粉色系） ===== */
+  --primary: #f091a0;
+  --primary-light: #fce4e8;
+  --primary-lighter: #fef5f6;
+  --primary-dark: #e87789;
+  --primary-gradient: linear-gradient(135deg, #f091a0 0%, #f5b8a0 100%);
+  --primary-gradient2: linear-gradient(135deg, #f091a0 0%, #f5b8a0 50%, #f5d0a0 100%);
+
+  /* ===== 辅助色 ===== */
+  --accent: #f5b8a0;
+  --accent-light: #fef0ea;
+  --gold: #d4a574;
+  --gold-light: #f5ede3;
+
+  /* ===== 功能色 ===== */
+  --success: #3cc87e;
+  --success-bg: #e8f8ef;
+  --warning: #f5a623;
+  --warning-bg: #fef6e7;
+  --danger: #f56c6c;
+  --danger-bg: #fde8e8;
+  --info: #7e9cff;
+  --info-bg: #eef0ff;
+
+  /* ===== 背景层次 ===== */
+  --bg-page: #fdf7f8;
+  --bg-card: #ffffff;
+  --bg-header: #ffffff;
+  --bg-tag: #f8f0f1;
+
+  /* ===== 文字 ===== */
+  --text-primary: #2c2c2c;
+  --text-secondary: #9c8c8e;
+  --text-tertiary: #c4b6b8;
+  --text-placeholder: #ddd0d2;
+
+  /* ===== 边框 & 圆角 ===== */
+  --border: #f5e8ea;
+  --border-light: #fcf0f2;
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+
+  /* ===== 阴影 ===== */
+  --shadow-sm: 0 1px 3px rgba(240,145,160,0.06);
+  --shadow: 0 2px 10px rgba(240,145,160,0.08);
+  --shadow-lg: 0 4px 20px rgba(240,145,160,0.12);
+  --shadow-card: 0 2px 12px rgba(240,145,160,0.08);
+
+  /* ===== 字体 ===== */
+  --font-xs: 11px;
+  --font-sm: 13px;
+  --font-base: 15px;
+  --font-lg: 17px;
+  --font-xl: 20px;
+  --font-xxl: 28px;
+
+  /* ===== 间距 ===== */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 16px;
+  --space-xl: 24px;
+  --space-xxl: 32px;
+}
+
+/* ===== 全局 Vant 主题覆盖 ===== */
+:root {
+  --van-primary-color: var(--primary);
+  --van-button-primary-background: var(--primary);
+  --van-button-primary-border-color: var(--primary);
+  --van-button-radius: var(--radius);
+  --van-cell-background: var(--bg-card);
+  --van-cell-border-color: var(--border);
+  --van-cell-value-color: var(--text-primary);
+  --van-nav-bar-background: var(--bg-card);
+  --van-nav-bar-title-text-color: var(--text-primary);
+  --van-tabbar-background: var(--bg-card);
+  --van-tabbar-item-active-color: var(--primary);
+  --van-tabs-bottom-bar-color: var(--primary);
+  --van-tab-active-text-color: var(--primary);
+  --van-field-label-color: var(--text-secondary);
+  --van-field-input-text-color: var(--text-primary);
+  --van-progress-background: var(--border);
+  --van-progress-pivot-color: #fff;
+  --van-tag-radius: var(--radius-sm);
+  --van-dialog-radius: var(--radius-lg);
+  --van-popup-radius: var(--radius-lg);
+  --van-cell-border-color: var(--border);
+  --van-cell-vertical-padding: 14px;
+  --van-cell-horizontal-padding: 16px;
+}

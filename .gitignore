@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+yarn.lock
+
+# Build output
+dist/
+build/
+
+# Database & runtime data (keep schema, ignore data)
+backend/data/
+backend/config/data/
+*.db
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Backup scripts (server-specific paths)
+scripts/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp files
+*.tmp
+*.temp

@@ -1,0 +1,23 @@
+services:
+  goto-marry:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - VITE_GROOM_NAME=${VITE_GROOM_NAME}
+        - VITE_BRIDE_NAME=${VITE_BRIDE_NAME}
+        - VITE_WEDDING_DATE=${VITE_WEDDING_DATE}
+    container_name: goto-marry
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    volumes:
+      - ./backend/data:/app/backend/data
+      - .:/app/project
+    environment:
+      - NODE_ENV=production
+      - DATA_DIR=/app/backend/data
+      - TZ=Asia/Shanghai
+      - JWT_SECRET=${JWT_SECRET}
+      - PIN_CODE=${PIN_CODE}
+      - BUDGET_TOTAL=${BUDGET_TOTAL}

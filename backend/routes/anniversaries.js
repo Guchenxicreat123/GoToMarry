@@ -1,0 +1,10 @@
+const express = require('express');
+const router = express.Router();
+const anniversaryController = require('../controllers/anniversaryController');
+const authMiddleware = require('../middleware/auth');
+router.use(authMiddleware);
+router.get('/', anniversaryController.list);
+router.post('/', anniversaryController.create);
+router.put('/:id', anniversaryController.update);
+router.delete('/:id', anniversaryController.remove);
+module.exports = router;
